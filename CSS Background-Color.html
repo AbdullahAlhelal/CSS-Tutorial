@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Background-Color Examples</title>
+  <style>
+    /* Apply a background color to the entire page */
+    body {
+      background-color: black; /* black background for the page */
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Header with a distinct background color */
+    header {
+      background-color: #4CAF50; /* Green background for the header */
+      color: white; /* White text for contrast */
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Section container with its own background color */
+    section {
+      background-color: #FFF; /* White background */
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #DDD; /* Light border for separation */
+    }
+
+    /* Headings with different background colors */
+    h1, h2, h3 {
+      background-color: #2196F3; /* Blue background for headings */
+      color: white; /* White text */
+      padding: 10px;
+    }
+
+    /* Paragraph with a subtle background */
+    p {
+      background-color: #FFEB3B; /* Yellow background */
+      padding: 10px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    /* Span element with inline display background */
+    span {
+      background-color: #E91E63; /* Pink background */
+      color: white;
+      padding: 5px;
+    }
+
+    /* List items with alternating background colors */
+    ul li:nth-child(odd) {
+      background-color: #E0F7FA; /* Light cyan for odd items */
+      padding: 5px;
+    }
+
+    ul li:nth-child(even) {
+      background-color: #B2EBF2; /* Slightly darker cyan for even items */
+      padding: 5px;
+    }
+
+    /* Table with background colors for headers and cells */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th {
+      background-color: #9C27B0; /* Purple background for table headers */
+      color: white;
+      padding: 10px;
+      border: 1px solid #CCC;
+    }
+    td {
+      background-color: #F3E5F5; /* Light purple background for table cells */
+      padding: 10px;
+      border: 1px solid #CCC;
+    }
+
+    /* Form elements with background colors */
+    input, textarea, button {
+      background-color: #FFF; /* White background */
+      padding: 8px;
+      border: 1px solid #AAA;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #FF5722; /* Orange background for buttons */
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Link with a background color */
+    a {
+      background-color: #03A9F4; /* Light blue background */
+      color: white;
+      padding: 5px;
+      text-decoration: none;
+    }
+
+    /* Pseudo-element example: Adding a background to the first line of paragraphs */
+    p::first-line {
+      background-color: #C8E6C9; /* Light green background on the first line */
+    }
+  </style>
+</head>
+<body>
+ 
+ 
+  <header>
+    <h1>Welcome to CSS Background-Color Examples!</h1>
+  </header>
+
+  <section>
+    <h2>Text Elements</h2>
+    <p>
+      This paragraph demonstrates the use of background-color with a yellow hue. Notice how the first line has a light green background due to the pseudo-element styling.
+        <br>
+      This is the second line in the paragraph.
+    </p>
+    <p>
+      Here is another paragraph with the same styling.
+      <br>
+      This is the second line in the paragraph.
+    </p>
+    <span>This span element is styled with a pink background.</span>
+  </section>
+
+  <section>
+    <h2>Lists</h2>
+    <ul>
+      <li>List Item One</li>
+      <li>List Item Two</li>
+      <li>List Item Three</li>
+      <li>List Item Four</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tables</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+        <tr>
+          <td>Cell 3</td>
+          <td>Cell 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Form Elements</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" placeholder="Enter your name"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" placeholder="Enter your message"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Links</h2>
+    <p>
+      Check out this link:
+      <a href="https://example.com" target="_blank">Visit Example.com</a>
+    </p>
+  </section>
+
+  <!-- 
+    Explanation:
+    - The <body> uses a light gray background, providing a neutral canvas.
+    - The <header> has a solid green background with white text for emphasis.
+    - Each <section> is used to group related elements, each with its own background color and styling.
+    - Headings (h1, h2) and paragraphs (p) demonstrate how background-color can be applied to text elements.
+    - The list shows alternating background colors to visually distinguish items.
+    - The table shows separate background colors for headers and cells.
+    - Form elements (input, textarea, button) and links are also styled with background colors.
+    - A pseudo-element is used to add a background color to the first line of paragraphs.
+    
+    This example demonstrates the versatility of the background-color property across various HTML elements.
+  -->
+</body>
+</html>
