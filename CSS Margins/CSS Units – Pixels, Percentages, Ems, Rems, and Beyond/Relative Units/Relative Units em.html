@@ -1,0 +1,24 @@
+<style>
+    body {
+        font-size: 20px;
+        /* 1em = 16px here */
+    }
+
+    .parent {
+        font-size: 36px;
+        width: 1em;
+        /* 1.5 × 16px = 24px for this element */
+    }
+
+    .child {
+        font-size: 1.5em;
+        /* 1.5 × 24px = 36px for this element */
+    }
+</style>
+
+<div class="parent">
+    Parent text is 24px.
+    <div class="child">
+        Child text is 36px.
+    </div>
+</div>
